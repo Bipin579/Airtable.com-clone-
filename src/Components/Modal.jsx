@@ -7,13 +7,12 @@ import {
   DrawerContent,
   DrawerOverlay,
   useDisclosure,
+  Image,
 } from "@chakra-ui/react";
-
-
-function Modal({ value, buttonN }) {
+import hamburger from "../Utils/hamburger.png";
+function Modal() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
-
   return (
     <>
       <Button
@@ -23,9 +22,9 @@ function Modal({ value, buttonN }) {
         onClick={onOpen}
         bgColor={"none"}
       >
-        {buttonN}
-        {">"}
+        <Image src={hamburger} />
       </Button>
+
       <Drawer
         bgColor={"red.100"}
         isOpen={isOpen}
@@ -45,9 +44,7 @@ function Modal({ value, buttonN }) {
             flexDirection={"column"}
             rowGap={6}
             p={10}
-          >
-            {value}
-          </DrawerBody>
+          ></DrawerBody>
         </DrawerContent>
       </Drawer>
     </>

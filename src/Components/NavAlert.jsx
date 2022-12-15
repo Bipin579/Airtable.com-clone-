@@ -3,7 +3,7 @@ import React from "react";
 
 const NavAlert = () => {
   return (
-    <Box textAlign={"center"} p={4} backgroundColor={"#f0f6ff"} fontSize={"sm"} color={"black.100"}>
+    <Box textAlign={"center"} p={4} backgroundColor={"#f0f6ff"} fontSize={"sm"} color={"black.100"} maxW={"1300px"} margin="auto">
       See how new Airtable features can improve your work in our latest webinar <Text as={"span"}  fontWeight={"bold"} color={"#4F85D6"} >View webinar</Text>
     </Box>
   );
