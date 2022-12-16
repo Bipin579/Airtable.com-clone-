@@ -43,7 +43,7 @@ const Navbar = () => {
         <HStack p={1} pl={2}>
           <Box p={1}>
             <Link to={"/"}>
-              <Image src={logo} alt="Dan Abramov" w={170} />
+              <Image minW={"30px"} src={logo} alt="Dan Abramov" w={170} />
             </Link>
           </Box>
         </HStack>
@@ -57,15 +57,16 @@ const Navbar = () => {
               size="sm"
               variant={"solid"}
               _hover={{ bg: "#3944a8" }}
+
             >
               Sign up for free
             </Button>
           </Box>
           <Box>
-            <Button>Sign in</Button>
+            <Button size={['xs','sm','sm','sm','sm','sm']}>Sign in</Button>
           </Box>
           <Box>
-            <Modal />
+            <Modal  />
           </Box>
         </HStack>
       </Flex>

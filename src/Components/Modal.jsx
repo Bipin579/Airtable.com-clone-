@@ -16,13 +16,13 @@ function Modal() {
   return (
     <>
       <Button
-        size={"sm"}
+        size={["xs",'xs','sm']}
         ref={btnRef}
         variant="ghost"
         onClick={onOpen}
         bgColor={"none"}
       >
-        <Image src={hamburger} />
+        <Image minW={"30px"} src={hamburger} />
       </Button>
 
       <Drawer
@@ -32,10 +32,10 @@ function Modal() {
         onClose={onClose}
         finalFocusRef={btnRef}
       >
-        <DrawerOverlay marginTop="130px" />
+        <DrawerOverlay marginTop="134px" />
         <DrawerContent
           height={"82%"}
-          marginTop="130px"
+          marginTop="134px"
           width={["full", "full", "xl", "xl", "xl", "xl"]}
         >
           <DrawerCloseButton />
