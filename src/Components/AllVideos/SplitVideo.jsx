@@ -88,11 +88,18 @@ export default function SplitVideo() {
         pr={10}
         pt={[0, 0, 0, 0, 0, 20]}
         display="flex"
-        flexDirection={["column", "column", "column", "row", "row", "row"]}
+        flexDirection={[
+          "column-reverse",
+          "column-reverse",
+          "column-reverse",
+          "column-reverse",
+          "row",
+          "row",
+        ]}
         columnGap={10}
         pb={8}
       >
-        <Box width={["full", "full", "full", "50%", "50%", "50%"]}>
+        <Box width={["full", "full", "full", "full", "50%", "50%"]}>
           <Box minHeight={100} boxShadow={"md"}>
             <video muted autoPlay preload="auto" playsInline loop>
               <source src="https://static.airtable.com/images/homescreen/Homepage_Anim_03_TurnInformation_FINAL.mp4" />
@@ -101,7 +108,7 @@ export default function SplitVideo() {
           </Box>
         </Box>
 
-        <Box width={["auto", "auto", "auto", "50%", "50%", "50%"]}>
+        <Box width={["full", "full", "full", "full", "50%", "50%"]}>
           <Button bgColor={"purple"} color="white" rounded={"3xl"} mt={10}>
             New
           </Button>
@@ -127,8 +134,9 @@ export default function SplitVideo() {
             bg="none"
             textAlign={"left"}
             _hover={{ color: "darkblue" }}
+            fontSize={{ base: "md", sm: "sm", md: "md" }}
           >
-            Learn more about interface designing
+            Learn more about interface
           </Button>
         </Box>
       </Box>
@@ -184,7 +192,14 @@ export default function SplitVideo() {
         paddingTop={20}
         pl={10}
         pr={10}
-        flexDirection={["column", "column", "column", "row", "row", "row"]}
+        flexDirection={[
+          "column-reverse",
+          "column-reverse",
+          "column-reverse",
+          "row",
+          "row",
+          "row",
+        ]}
         gap={10}
       >
         <Box
@@ -199,7 +214,15 @@ export default function SplitVideo() {
               fontSize={{ base: "3xl", sm: "4xl", lg: "5xl" }}
               color={"blackAlpha.700"}
             >
-              Get Started <Text>quicky</Text>
+              Get Started
+            </Text>
+            <Text
+              lineHeight={1.1}
+              fontWeight={600}
+              fontSize={{ base: "3xl", sm: "4xl", lg: "5xl" }}
+              color={"blackAlpha.700"}
+            >
+              quicky
             </Text>
             <Text fontSize={"xl"} pt={2}>
               All your information. Always up to date. At your fingertips. Keep
@@ -281,7 +304,23 @@ export default function SplitVideo() {
               fontSize={{ base: "3xl", sm: "4xl", lg: "5xl" }}
               color={"blackAlpha.700"}
             >
-              Tansform how<Text>works at</Text> scale
+              Tansform how
+            </Text>
+            <Text
+              lineHeight={1.1}
+              fontWeight={600}
+              fontSize={{ base: "3xl", sm: "4xl", lg: "5xl" }}
+              color={"blackAlpha.700"}
+            >
+              works at
+            </Text>
+            <Text
+              lineHeight={1.1}
+              fontWeight={600}
+              fontSize={{ base: "3xl", sm: "4xl", lg: "5xl" }}
+              color={"blackAlpha.700"}
+            >
+              scale
             </Text>
             <Text fontSize={"xl"} pt={2}>
               Discover deep integrations, advanced extensibility, expert
@@ -293,18 +332,44 @@ export default function SplitVideo() {
 
       {/* customer stories section  */}
 
-      <Box pl={10} pr={10} bgColor="#FAF5E8" pb={"80px"} pt="80px" >
-        <Box display={"flex"} justifyContent={"space-around"} m={"auto"}>
-          <Box width={"xs"}>
+      <Box pl={10} pr={10} bgColor="#FAF5E8" pb={"80px"} pt="80px">
+        <Box
+          display={"flex"}
+          justifyContent={"space-around"}
+          m={"auto"}
+          flexDirection={["column", "column", "row", "row", "row", "row"]}
+        >
+          <Box
+            width={["full", "full", "full", "sm", "sm", "sm"]}
+            display={["flex", "flex", "block", "block", "block", "block"]}
+          >
             <Text
               lineHeight={1.1}
               fontWeight={600}
-              fontSize={{ base: "3xl", sm: "4xl", lg: "5xl" }}
+              fontSize={{ base: "2xl", sm: "3xl", lg: "4xl" }}
             >
-              Trusted by <Text>teams from all</Text> industries
+              Trusted by
+            </Text>{" "}
+            <Text
+              lineHeight={1.1}
+              fontWeight={600}
+              fontSize={{ base: "2xl", sm: "3xl", lg: "4xl" }}
+            >
+              teams from
+            </Text>{" "}
+            <Text
+              lineHeight={1.1}
+              fontWeight={600}
+              fontSize={{ base: "2xl", sm: "3xl", lg: "4xl" }}
+            >
+              all industries
             </Text>
           </Box>
-          <Box width={"xs"} display={"flex"} >
+          <Box
+            width={["full", "full", "full", "sm", "sm", "sm"]}
+            display={"flex"}
+            justifyContent={["left", "left", "center", "center", "center"]}
+          >
             <Button
               fontWeight={"500"}
               color={"blue"}
@@ -319,12 +384,76 @@ export default function SplitVideo() {
             </Button>
           </Box>
         </Box>
-        <Box display={"flex"} justifyContent="center" m={"auto"} mt={20}>
-          <Box width={"40%"}>
-            <Image src="https://static.airtable.com/images/homescreen/homepage-bakerhughes-portrait.jpg" />
+        <Box
+          display={"flex"}
+          justifyContent="center"
+          m={"auto"}
+          mt={14}
+          flexDirection={["column", "column", "row", "row", "row", "row"]}
+        >
+          <Box bgColor={"white"} width={["100%", "100%", "50%", "45%", "40%"]}>
+            <Image
+              objectFit={"fill"}
+              src="https://static.airtable.com/images/homescreen/homepage-bakerhughes-portrait.jpg"
+            />
           </Box>
-          <Box width={"40%"} bgColor="white"></Box>
+          <Box
+            width={["100%", "100%", "50%", "45%", "40%"]}
+            bgColor="white"
+            p={10}
+            boxShadow="md"
+            fontWeight="600"
+            fontSize={"xl"}
+          >
+            <Text pb={4}>Baker Huges</Text>
+            <Text fontSize={{ base: "md", md: "xl", xl: "2xl" }}>
+              "A business transformationis really just a series of smaller
+              changes rolling out one after the other. It's about getting the
+              right information to people when they need it. What started as an
+              Airtable calendar very quickly became the solution that we use to
+              manage everything."
+            </Text>
+            <Text mt={4} fontWeight="700">
+              Stephanie Hartgrove
+            </Text>
+            <Text fontWeight={"500"}>
+              VP of Global Communications, Baker Hughes
+            </Text>
+            <Button
+              fontWeight={"500"}
+              color={"blue"}
+              bg="none"
+              textAlign={"left"}
+              _hover={{ color: "darkblue" }}
+              mt={5}
+              fontSize="xl"
+              alignSelf={"flex-end"}
+            >
+              Watch Video
+            </Button>
+          </Box>
         </Box>
+      </Box>
+
+      {/* above footer join us  */}
+      <Box pl={10} pr={10} pt={24} textAlign="center" pb={10}>
+        <Text lineHeight={1.1} fontSize={{ base: "2xl", md: "3xl", xl: "5xl" }} fontWeight="bold" maxW="xl" m="auto" >
+          300,000+ innovative companies use Airtable every day. Join them.
+        </Text>
+        <Button
+              bgColor={"#0768F8"}
+              color="white"
+              fontWeight={"bold"}
+              size="md"
+              variant={"solid"}
+          _hover={{ bg: "#3944a8" }}
+          mt={7}
+          mb={3}
+            >
+              Sign up for free
+        </Button>
+        <Text>No credit card needed</Text>
+
       </Box>
     </Container>
   );

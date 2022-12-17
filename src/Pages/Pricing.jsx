@@ -41,7 +41,8 @@ const Pricing = () => {
       </Box>
       <chakra.h1 fontSize="4xl" fontWeight="bold" textAlign="center" mb={5}>
         Choose the perfect plan
-        <Spacer />
+      </chakra.h1>
+      <chakra.h1 fontSize="4xl" fontWeight="bold" textAlign="center" mb={5}>
         for your team's needs
       </chakra.h1>
       <PricingCard />
@@ -368,7 +369,19 @@ const PricingCard = () => {
           color={"RGBA(0, 0, 0, 0.84)"}
         >
           For individuals or very small{" "}
-          <Spacer>teams just getting started</Spacer>
+        </Text>
+        <Text
+          fontWeight={"bold"}
+          textAlign={"left"}
+          color={"RGBA(0, 0, 0, 0.84)"}
+        >
+          teams just getting started
+        </Text>
+        <Text
+          fontWeight={"bold"}
+          textAlign={"left"}
+          color={"RGBA(0, 0, 0, 0.84)"}
+        >
           with Airtable
         </Text>
 
@@ -447,12 +460,25 @@ const PricingCard = () => {
           Plus
         </Text>
         <Text
+          as={"span"}
           fontWeight={"bold"}
           textAlign={"left"}
           color={"RGBA(0, 0, 0, 0.84)"}
         >
-          For teams looking to create
-          <Spacer>connected apps to manage</Spacer>
+          For teams looking to create{" "}
+        </Text>
+        <Text
+          fontWeight={"bold"}
+          textAlign={"left"}
+          color={"RGBA(0, 0, 0, 0.84)"}
+        >
+          connected apps to manage
+        </Text>
+        <Text
+          fontWeight={"bold"}
+          textAlign={"left"}
+          color={"RGBA(0, 0, 0, 0.84)"}
+        >
           their own workflows
         </Text>
 
@@ -539,7 +565,21 @@ const PricingCard = () => {
           color={"RGBA(0, 0, 0, 0.84)"}
         >
           For individuals or very small{" "}
-          <Spacer>teams just getting started</Spacer>
+        </Text>
+
+        <Text
+          fontWeight={"bold"}
+          textAlign={"left"}
+          color={"RGBA(0, 0, 0, 0.84)"}
+        >
+          teams just getting started
+        </Text>
+
+        <Text
+          fontWeight={"bold"}
+          textAlign={"left"}
+          color={"RGBA(0, 0, 0, 0.84)"}
+        >
           with Airtable
         </Text>
 
@@ -623,7 +663,11 @@ const PricingCard = () => {
         </Text>
         <Text fontWeight={"bold"} textAlign={"left"} color={"white"}>
           For individuals or very small{" "}
-          <Spacer>teams just getting started</Spacer>
+        </Text>
+        <Text fontWeight={"bold"} textAlign={"left"} color={"white"}>
+          teams just getting started
+        </Text>
+        <Text fontWeight={"bold"} textAlign={"left"} color={"white"}>
           with Airtable
         </Text>
 
