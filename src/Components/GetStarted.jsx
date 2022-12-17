@@ -31,7 +31,7 @@ const GetStarted = () => {
             fontSize={["3xl", "4xl", "5xl", "6xl", "7xl", "7xl"]}
             fontWeight={"bold"}
             lineHeight={["40px", "50px", "60px", "60px", "80px", "80px"]}
-            color="blackAlpha.750"
+            color="blackAlpha.800"
           >
             Connect everything.{" "}
           </Text>
@@ -40,7 +40,7 @@ const GetStarted = () => {
             fontWeight={"bold"}
             lineHeight={["40px", "50px", "60px", "60px", "80px", "80px"]}
             mb={5}
-            color="blackAlpha.750"
+            color="blackAlpha.800"
           >
             Acheive anything.{" "}
           </Text>
