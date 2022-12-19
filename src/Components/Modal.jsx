@@ -17,7 +17,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import hamburger from "../Utils/hamburger.png";
-import { NavLink } from "react-router-dom";
+import { NavLink,Link } from "react-router-dom";
 function Modal() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
@@ -66,13 +66,13 @@ function Modal() {
                 <AccordionPanel pb={4}>
                   <Box>
                     <Text as={"h1"} fontWeight="bold" pb={1.5}>
-                      Overview
+                      <Link to={"/product"}>Overview</Link> 
                     </Text>
                     <Text>Welcome to Stata! Here's the basics</Text>
                   </Box>
                   <Box>
                     <Text as={"h1"} fontWeight="bold" pb={1.5}>
-                      Features
+                      <Link to={"/integration"}>Integrations</Link>
                     </Text>
                     <Text>Discover automation, views, reporting and more</Text>
                   </Box>
@@ -218,7 +218,7 @@ function Modal() {
                 </AccordionPanel>
               </AccordionItem>
 
-              <AccordionItem >
+              <AccordionItem>
                 <h2>
                   <AccordionButton py={3}>
                     <Box as="span" flex="1" textAlign="left">
@@ -265,6 +265,16 @@ function Modal() {
                     </Text>
                   </Box>
                 </AccordionPanel>
+              </AccordionItem>
+
+              <AccordionItem>
+                <h2>
+                  <AccordionButton py={3}>
+                    <Box as="span" flex="1" textAlign="left">
+                      <Link to={"/contactsales"}>Contact Sales</Link>
+                    </Box>
+                  </AccordionButton>
+                </h2>
               </AccordionItem>
             </Accordion>
           </DrawerBody>
