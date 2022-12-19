@@ -174,7 +174,7 @@ function SignIn() {
                 bgColor={"black"}
                 color="white"
                 borderRadius="none"
-                bg={"blue.500"}
+                bg={"back"}
                 _hover={{ bg: "grey", color: "white" }}
                 onClick={signGoogle}
                 w={"full"}
