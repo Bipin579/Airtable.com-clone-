@@ -8,7 +8,7 @@ import time from "../Utils/time.png";
 import shopify from "../Utils/shopify.png";
 const GetStarted = () => {
   return (
-    <Box maxW={"1300px"}>
+    <Box maxW={"1300px"} m="auto">
       <Box
         pt={[0, 0, 0, 0, 0, 20]}
         pl={10}

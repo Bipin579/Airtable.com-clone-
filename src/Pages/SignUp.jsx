@@ -103,7 +103,9 @@ function SignUp() {
       minH={"100vh"}
       align={"center"}
       justify={"center"}
-      bg={"gray.50" }
+      bg={"gray.50"}
+      maxW="1300px"
+      m="auto"
     >
       <Stack spacing={8} mx={"auto"} maxW={"lg"} py={12} px={6}>
         <Stack align={"center"}>

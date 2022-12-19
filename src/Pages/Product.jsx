@@ -6,10 +6,9 @@ import {
   AccordionPanel,
   Box,
   Button,
-  Flex,
-  Heading,
+ 
   Image,
-  Stack,
+
   Text,
 } from "@chakra-ui/react";
 import React from "react";
@@ -17,7 +16,7 @@ import React from "react";
 const Product = () => {
   return (
     // hero section
-    <Box maxW={"1300px"} pt={"120px"}>
+    <Box maxW={"1300px"} pt={"120px"} m="auto">
       <Box
         display="flex"
         bgColor={"#EBF7FC"}

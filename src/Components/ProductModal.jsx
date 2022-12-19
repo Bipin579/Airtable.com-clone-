@@ -36,6 +36,8 @@ const ProductModal = () => {
         placement="top"
         onClose={onClose}
         finalFocusRef={btnRef}
+        maxW="1300"
+        m="auto"
       >
         <DrawerOverlay marginTop="130px" />
         <DrawerContent

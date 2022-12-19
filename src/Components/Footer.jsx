@@ -12,6 +12,7 @@ const Footer = () => {
       maxW={"1300px"}
       pl={10}
       pr={10}
+      m="auto"
     >
       <Box
         maxW="1300"

@@ -5,7 +5,7 @@ import SplitVideo from "../Components/AllVideos/SplitVideo";
 
 const Home = () => {
   return (
-    <Box maxW={"1300px"} pt={135} >
+    <Box maxW={"1300px"} pt={135} m="auto" >
       <GetStarted />
       {/* below hero section header */}
       <Box pb={8}>

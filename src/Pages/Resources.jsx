@@ -1,10 +1,11 @@
+import { Box } from '@chakra-ui/react'
 import React from 'react'
 
 const Resources = () => {
   return (
-    <div>
+    <Box maxW={"1300px"} py={10} m="auto">
       Resources
-    </div>
+    </Box>
   )
 }
 

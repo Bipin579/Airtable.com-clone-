@@ -4,7 +4,7 @@ import {
   Container,
   useColorModeValue,
   Box,
-  Spacer,
+
   Button,
   List,
   ListItem,
@@ -28,7 +28,7 @@ import { Link } from "react-router-dom";
 
 const Pricing = () => {
   return (
-    <Container maxW={"1300px"} pt={150} mb={20}>
+    <Container maxW={"1300px"} pt={150} pb={20} m="auto">
       <Box
         textAlign={"center"}
         pt={4}

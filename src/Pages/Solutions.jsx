@@ -1,11 +1,12 @@
-import React from 'react'
+import { Box } from "@chakra-ui/react";
+import React from "react";
 
 const Solutions = () => {
   return (
-    <div>
+    <Box maxW={"1300px"} py={10} m="auto">
       Solutions
-    </div>
-  )
-}
+    </Box>
+  );
+};
 
-export default Solutions
+export default Solutions;

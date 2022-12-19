@@ -54,7 +54,7 @@ export default function contactSales() {
       );
   }
   return (
-    <Container bg="#333333" maxW="1300px" mt={0} pt={"150px"} pb={10}>
+    <Container bg="#333333" maxW="1300px" m="auto" pt={"150px"} pb={10}>
       <Text
         color={"white"}
         fontSize={["3xl", "3xl", "4xl", "5xl", "6xl", "6xl"]}

@@ -162,7 +162,7 @@ const ProductIntegration = () => {
     console.log(name ,val)
   }
   return (
-    <Box maxW={"1300px"} pt="130px">
+    <Box maxW={"1300px"} pt="130px" m="auto">
       <Box
         display="flex"
         bgColor={"#0C4543"}

@@ -27,7 +27,7 @@ const Checkout = () => {
     setIsOpen(true);
   };
   return (
-    <Box py={10} pt={"140px"} bg={"#F7FAFC"}>
+    <Box py={10} pt={"140px"} bg={"#F7FAFC"} m="auto">
       <Heading textAlign={"center"} mb={4}>
         Checkout
       </Heading>
