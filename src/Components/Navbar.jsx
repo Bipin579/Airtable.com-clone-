@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Box, Button, Flex, HStack, Image } from "@chakra-ui/react";
+import React, { useEffect, useState, useContext } from "react";
+import { Box, Button, Flex, HStack, Image, useToast } from "@chakra-ui/react";
 import logo from "../Utils/logo.png";
 import { Link } from "react-router-dom";
 import NavAlert from "../Components/NavAlert";
@@ -9,10 +9,44 @@ import EnterPrizeModal from "./EnterPrizeModal";
 import ResourceModal from "./ResourceModal";
 import { NavLink } from "react-router-dom";
 import Modal from "../Components/Modal";
+import { AllContext } from "../Context/AllContext";
+import app from "../firebase/firebase";
+import { signOut, getAuth } from "firebase/auth"
+
+const auth = getAuth(app)
+
 const Navbar = () => {
+  const { isAuth,setIsAuth } = useContext(AllContext);
   let activeStyle = {
     color: "blue",
   };
+  const toast = useToast();
+  const logOut = () => {
+    signOut(auth)
+    .then((val) => {
+      toast({
+        title: "Logout",
+        description: `Logout Successful`,
+        status: "success",
+        duration: 3000,
+        position: "top",
+        isClosable: true,
+      });
+      console.log(val)
+      setIsAuth(false);
+    })
+      .catch((err) => {
+      console.log(err)
+      toast({
+        title: `${err.message}`,
+        status: "error",
+        isClosable: true,
+        position: "top",
+        duration: 3000,
+      });
+      
+    });
+  }
   const [windowDimension, setWindowDimension] = useState(null);
 
   useEffect(() => {
@@ -49,7 +83,7 @@ const Navbar = () => {
         </HStack>
 
         <HStack p={1} pr={8}>
-        <Box display={windowDimension>=750? "block":"none"}>
+          <Box display={(windowDimension >= 750 ? "block" : "none") || (isAuth ? "none" : "block")}>
             <Button
               bgColor={"#0768F8"}
               color="white"
@@ -57,22 +91,26 @@ const Navbar = () => {
               size="sm"
               variant={"solid"}
               _hover={{ bg: "#3944a8" }}
-
             >
-              Sign up for free
+              <Link to={"/signup"}>Sign up for free</Link>
             </Button>
           </Box>
           <Box>
-            <Button size={['xs','sm','sm','sm','sm','sm']}>Sign in</Button>
+            <Button size={["xs", "sm", "sm", "sm", "sm", "sm"]} display={isAuth ? "none" : "block"}>
+              <Link to={"/signin"}>Sign in</Link>
+            </Button>
+          </Box>
+          <Box display={isAuth?"block":"none"} size={["xs", "sm", "sm", "sm", "sm", "sm"]}>
+            <Button onClick={logOut}>Logout</Button>
           </Box>
           <Box>
-            <Modal  />
+            <Modal />
           </Box>
         </HStack>
       </Flex>
     </Box>
   ) : (
-      //  DeskTop View  *********************************************************************************
+    //  DeskTop View  *********************************************************************************
     <Box overflow={"hidden"} pos={"fixed"} width="100%" zIndex={10}>
       <NavAlert />
       <Flex
@@ -126,7 +164,8 @@ const Navbar = () => {
               <Link to={"/contactsales"}>Contact sales</Link>
             </Button>
           </Box>
-          <Box>
+
+          <Box display={isAuth ? "none" : "block"}>
             <Button
               bgColor={"#0768F8"}
               color="white"
@@ -135,11 +174,16 @@ const Navbar = () => {
               variant={"solid"}
               _hover={{ bg: "#3944a8" }}
             >
-              Sign up for free
+              <Link to={"/signup"}>Sign up for free</Link>
             </Button>
           </Box>
-          <Box>
-            <Button>Sign in</Button>
+          <Box display={isAuth ? "none" : "block"}>
+            <Button>
+              <Link to={"/signin"}>Sign in</Link>
+            </Button>
+          </Box>
+          <Box display={!isAuth?"none":"block"}>
+            <Button onClick={logOut}>Logout</Button>
           </Box>
         </HStack>
       </Flex>
@@ -148,4 +192,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

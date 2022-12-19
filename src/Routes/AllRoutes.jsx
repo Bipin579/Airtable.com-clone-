@@ -12,27 +12,29 @@ import SignUp from "../Pages/SignUp";
 import SignIn from "../Pages/SignIn";
 import Solutions from "../Pages/Solutions";
 import Footer from "../Components/Footer";
+import ProductIntegration from "../Pages/ProductIntegration";
 
 const AllRoutes = () => {
   return (
     <div>
-        <Navbar />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route
           path="/contactsales"
           element={<ContactSales></ContactSales>}
         ></Route>
-        <Route path="/enterprize" element={<Enterprize></Enterprize>}></Route>
-        <Route path="/pricing" element={<Pricing></Pricing>}></Route>
-        <Route path="/product" element={<Product></Product>}></Route>
-        <Route path="/resources" element={<Resources></Resources>}></Route>
-        <Route path="/singup.jsx" element={<SignUp></SignUp>}></Route>
-        <Route path="/singin" element={<SignIn></SignIn>}></Route>
-        <Route path="/solutions" element={<Solutions></Solutions>}></Route>
-        <Route path="*" element={<NotFound></NotFound>}></Route>
+        <Route path="/enterprize" element={<Enterprize />}></Route>
+        <Route path="/pricing" element={<Pricing />}></Route>
+        <Route path="/product" element={<Product />}></Route>
+        <Route path="/resources" element={<Resources />}></Route>
+        <Route path="/signup" element={<SignUp />}></Route>
+        <Route path="/signin" element={<SignIn />}></Route>
+        <Route path="/solutions" element={<Solutions />}></Route>
+        <Route path="/integration" element={<ProductIntegration />}></Route>
+        <Route path="*" element={<NotFound />}></Route>
       </Routes>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

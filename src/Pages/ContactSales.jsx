@@ -6,11 +6,56 @@ import {
   Input,
   Textarea,
   Grid,
+  useToast,
+  Divider,
+  Center,
 } from "@chakra-ui/react";
 
+import React, { useRef, useState } from "react";
+import emailjs from "emailjs-com";
+
 export default function contactSales() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const form = useRef();
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const toast = useToast();
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_bpkgnvj",
+        "template_vcynkbw",
+        form.current,
+        "NVyJjGNgervcRzf9S"
+      )
+      .then(
+        (result) => {
+          form.current.reset();
+          toast({
+            title: "Account created.",
+            description: "We've created your account for you.",
+            status: "success",
+            duration: 9000,
+            isClosable: true,
+            position: "bottom",
+          });
+        },
+        (error) => {
+          toast({
+            title: `${error} toast`,
+            status: "error",
+            isClosable: true,
+            position: "bottom",
+          });
+        }
+      );
+  }
   return (
-    <Container bg="#333333" maxW="full" mt={0} pt={"150px"} pb={10}>
+    <Container bg="#333333" maxW="1300px" mt={0} pt={"150px"} pb={10}>
       <Text
         color={"white"}
         fontSize={["3xl", "3xl", "4xl", "5xl", "6xl", "6xl"]}
@@ -32,17 +77,19 @@ export default function contactSales() {
           display="flex"
           justifyContent={"flex-end"}
           py={"8"}
+          borderBottom="1px solid black"
         >
           <Text as={"span"}>Looking for Help? </Text>
           <Text color={"blue.600"} as={"span"}>
             Message Support
           </Text>
+         
         </Box>
 
         <Text py={8}>Ready to chat with sales</Text>
 
         {/* <VStack p={6} border="5px solid red" boxSizing="border-box"> */}
-        <form>
+        <form ref={form} onSubmit={sendEmail}>
           <Grid gridGap="16px">
             <FormControl>
               <Input
@@ -94,7 +141,11 @@ export default function contactSales() {
               />
             </FormControl>
             <FormControl>
-              <Textarea bgColor={"#F2F2F2"} placeholder="Enter message" />
+              <Textarea
+                name="message"
+                bgColor={"#F2F2F2"}
+                placeholder="Enter message"
+              />
             </FormControl>
             <Input
               type="submit"
@@ -106,8 +157,11 @@ export default function contactSales() {
             />
           </Grid>
         </form>
-        <Text fontSize={"xs"}>By clicking Next, you acknowledge that your data will be handled in accordance With Airtable's Privacy Policy, and you
-authorize Airtable to send you updates about Airtable products, services, and events.</Text>
+        <Text fontSize={"xs"}>
+          By clicking Next, you acknowledge that your data will be handled in
+          accordance With Airtable's Privacy Policy, and you authorize Airtable
+          to send you updates about Airtable products, services, and events.
+        </Text>
         {/* </VStack> */}
       </Box>
     </Container>

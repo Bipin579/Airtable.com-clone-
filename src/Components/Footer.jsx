@@ -89,8 +89,8 @@ const Footer = () => {
           </Box>
         </Flex>
       </Box>
-      <Flex px={10} justifyContent="space-between" flexDir={["column","column","column","row","row","row"]} gap={10} fontSize={"lg"} >
-        <Box display={"flex"} justifyContent={"space-evenly"} width="md" m={"auto"} >
+      <Flex px={10} justifyContent="space-between" flexDir={["column","column","column","row","row","row"]} gap={10} fontSize={["sm","sm","sm","md","lg"]} >
+        <Box display={"flex"} justifyContent={"space-evenly"} width={["full","full","full","sm","md","md"]} m={"auto"} >
         <Text>Security</Text>
         <Text>API</Text>
         <Text>Sitemap</Text>
@@ -98,7 +98,7 @@ const Footer = () => {
         <Text>Terms</Text>
         </Box>
 
-        <Box  display={"flex"} justifyContent={"space-between"} width="xs" m={"auto"} >
+        <Box  display={"flex"} justifyContent={"space-between"} width={["full","full","full","xs","xs","xs"]} m={"auto"} >
           <Image maxW={"170px"} src='https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg'/>
           <Image maxW={'150px'} src='https://lh3.googleusercontent.com/q1k2l5CwMV31JdDXcpN4Ey7O43PxnjAuZBTmcHEwQxVuv_2wCE2gAAQMWxwNUC2FYEOnYgFPOpw6kmHJWuEGeIBLTj9CuxcOEeU8UXyzWJq4NJM3lg=s0'/>
         </Box>
