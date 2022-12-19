@@ -39,7 +39,7 @@ function SignIn() {
     signInWithEmailAndPassword(auth, email, password)
       .then((val) => {
         toast({
-          title: "Account created.",
+          title: "Successfully Logged In.",
           description: `Welcome ${email}`,
           status: "success",
           duration: 3000,
@@ -69,8 +69,8 @@ function SignIn() {
     signInWithPopup(auth, googleAuth)
       .then((val) => {
         toast({
-          title: "Account created.",
-          description: `Welcome ${email}`,
+          title: "SuccessFully Logged In.",
+          description: `Welcome to Stata`,
           status: "success",
           duration: 3000,
           position: "top",

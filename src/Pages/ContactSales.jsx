@@ -7,11 +7,10 @@ import {
   Textarea,
   Grid,
   useToast,
-  Divider,
-  Center,
+ 
 } from "@chakra-ui/react";
 
-import React, { useRef, useState } from "react";
+import React, { useRef} from "react";
 import emailjs from "emailjs-com";
 
 export default function contactSales() {
@@ -36,10 +35,10 @@ export default function contactSales() {
         (result) => {
           form.current.reset();
           toast({
-            title: "Account created.",
-            description: "We've created your account for you.",
+            title: "Recieved.",
+            description: "We have got mail .We will Contact you.",
             status: "success",
-            duration: 9000,
+            duration: 4000,
             isClosable: true,
             position: "bottom",
           });

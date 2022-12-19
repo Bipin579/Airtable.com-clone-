@@ -67,8 +67,8 @@ function SignUp() {
     signInWithPopup(auth, googleAuth)
       .then((val) => {
         toast({
-          title: "Account created.",
-          description: `Welcome ${email}`,
+          title: "Successfully Logged In.",
+          description: `Welcome to Stata`,
           status: "success",
           duration: 3000,
           position: "top",

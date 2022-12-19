@@ -13,6 +13,8 @@ import SignIn from "../Pages/SignIn";
 import Solutions from "../Pages/Solutions";
 import Footer from "../Components/Footer";
 import ProductIntegration from "../Pages/ProductIntegration";
+import Checkout from "../Pages/Checkout";
+import PrivateRoute from "./PrivateRoute";
 
 const AllRoutes = () => {
   return (
@@ -32,6 +34,7 @@ const AllRoutes = () => {
         <Route path="/signin" element={<SignIn />}></Route>
         <Route path="/solutions" element={<Solutions />}></Route>
         <Route path="/integration" element={<ProductIntegration />}></Route>
+        <Route path="/checkout" element={<PrivateRoute><Checkout /></PrivateRoute>}></Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
       <Footer />

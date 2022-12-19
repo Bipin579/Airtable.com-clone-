@@ -23,6 +23,8 @@ import {
 } from "@chakra-ui/react";
 // Here we have used react-icons package for the icons
 import { CheckCircleIcon } from "@chakra-ui/icons";
+import { Link } from "react-router-dom";
+
 
 const Pricing = () => {
   return (
@@ -396,7 +398,7 @@ const PricingCard = () => {
         </Text>
 
         <Button size={"lg"} border={"1px solid black"} borderRadius={20}>
-          Sign Up
+          <Link to={"/signup"}>Sign Up</Link> 
         </Button>
 
         <Text textAlign={"left"} pt={15}>
@@ -496,7 +498,7 @@ const PricingCard = () => {
         </Text>
 
         <Button size="lg" border={"1px solid black"} borderRadius={20}>
-          Try it for Button
+          <Link to={"/checkout"}>Try for Free</Link> 
         </Button>
 
         <Text textAlign={"left"} pt={15}>
@@ -597,11 +599,11 @@ const PricingCard = () => {
         </Text>
 
         <Button size={"lg"} bgColor={"blue"} color="white" borderRadius={20}>
-          Try it for free
+          <Link to={"/checkout"}>Try for free</Link> 
         </Button>
 
         <Text pt={15} textAlign={"left"}>
-          Everything in Plus, plus :{" "}
+           Everything in Plus, plus :{" "}
         </Text>
 
         <List spacing={1} textAlign={"left"}>
@@ -687,7 +689,7 @@ const PricingCard = () => {
           border={"1px solid black"}
           borderRadius={20}
         >
-          Contact Sales
+          <Link to={"/contactsales"}>Contact Sales</Link> 
         </Button>
 
         <Text pt={18} textAlign={"left"}>
