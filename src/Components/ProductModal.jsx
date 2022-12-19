@@ -10,7 +10,8 @@ import {
   Box,
   Text,
 } from "@chakra-ui/react";
-import {ChevronRightIcon} from "@chakra-ui/icons"
+import { ChevronRightIcon } from "@chakra-ui/icons"
+import {Link} from "react-router-dom"
 
 const ProductModal = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -51,15 +52,15 @@ const ProductModal = () => {
           >
             <Box>
               <Text as={"h1"} fontWeight="bold" pb={1.5}>
-                Overview
+                <Link to={"/product"}>Overview</Link> 
               </Text>
               <Text>Welcome to Stata! Here's the basics</Text>
             </Box>
             <Box>
               <Text as={"h1"} fontWeight="bold" pb={1.5}>
-                Features
+                <Link to={"/integration"}>Integrations</Link>
               </Text>
-              <Text>Discover automation, views, reporting and more</Text>
+              <Text>Bring Your favourite tools into Airtable</Text>
             </Box>
             <Box>
               <Text as={"h1"} fontWeight="bold" pb={1.5}>
