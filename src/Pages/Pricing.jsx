@@ -559,7 +559,7 @@ const PricingCard = () => {
           fontWeight={"bold"}
           color={"RGBA(0, 0, 0, 0.64)"}
         >
-          Free
+          Pro
         </Text>
         <Text
           fontWeight={"bold"}
