@@ -85,7 +85,7 @@ export default function contactSales() {
          
         </Box>
 
-        <Text py={8}>Ready to chat with sales</Text>
+        <Text fontSize={"3xl"} fontWeight="bold" py={8}>Ready to chat with sales</Text>
 
         {/* <VStack p={6} border="5px solid red" boxSizing="border-box"> */}
         <form ref={form} onSubmit={sendEmail}>
