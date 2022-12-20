@@ -153,6 +153,7 @@ export default function contactSales() {
               bgColor={"blackAlpha.700"}
               color="white"
               fontWeight={"500"}
+              cursor="pointer"
             />
           </Grid>
         </form>
