@@ -1,9 +1,9 @@
 
-<h1 align="center" id="title">Paytm mall</h1>
+<h1 align="center" id="title">Airtable</h1>
 
 
 
-<p id="description">Paytm Mall - India's Leading Online Shopping Experience, Brought to You by Paytm. Online shopping with Paytm Mall is quick, convenient and trouble-free. You can shop for the desired product right from the comfort of your home and get them delivered straight to your doorstep.<br><br><b>This is a collaborative project of 4 members</b><br><br>- Bipin Singh (Team Lead)<br>- Satyam Kumar<br>- Abhay Kumar<br>- Ritik Singh</p>
+<p id="description">Airtable - Airtable is a platform that makes it easy to build powerful, custom applications. These tools can streamline just about any process, workflow, or project—and best of all, you can build them without ever learning to write a single line of code.<br><br><b>This is an Individual Project</b><br><br></p>
 
 
 
@@ -33,7 +33,7 @@
 
 <h2>🌐See Live</h2>
 
-[https://paytm-mall-clone-eight.vercel.app/](https://paytm-mall-clone-eight.vercel.app/)
+[https://stata-web.vercel.app/](https://stata-web.vercel.app/)
 
 
 
@@ -42,7 +42,7 @@
 <p>1. Clone the repo</p>
 
 ```
-git clone https://github.com/Bipin579/tasteful-pump-9576.git
+git clone https://github.com/Bipin579/afraid-substance-3392
 ```
 
 <p>2. Install NPM packages</p>
