@@ -1,70 +1,73 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center" id="title">Paytm mall</h1>
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+<p id="description">Paytm Mall - India's Leading Online Shopping Experience, Brought to You by Paytm. Online shopping with Paytm Mall is quick, convenient and trouble-free. You can shop for the desired product right from the comfort of your home and get them delivered straight to your doorstep.<br><br><b>This is a collaborative project of 4 members</b><br><br>- Bipin Singh (Team Lead)<br>- Satyam Kumar<br>- Abhay Kumar<br>- Ritik Singh</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+<h2>Screenshots</h2>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+![Screenshot (50)](https://user-images.githubusercontent.com/110052834/216419313-22c482fb-ddc9-46c3-a352-405da187ac8c.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Screenshot (51)](https://user-images.githubusercontent.com/110052834/216419329-ddbedd2e-2d92-4107-987d-76e9654d964d.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Screenshot (52)](https://user-images.githubusercontent.com/110052834/216419375-4ffa2816-adf1-41d6-a0c1-d2c24862be52.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Screenshot (53)](https://user-images.githubusercontent.com/110052834/216419432-574e6b92-6360-45a3-8247-e0d84a4cee17.png)
 
-### `npm run eject`
+![Screenshot (54)](https://user-images.githubusercontent.com/110052834/216419490-52444081-07d3-47ba-8850-7bfab2f500d6.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Screenshot (55)](https://user-images.githubusercontent.com/110052834/216419566-3991220f-7da4-4b66-bdc4-4d63c5e1d93d.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Screenshot (56)](https://user-images.githubusercontent.com/110052834/216419605-21c523b0-04ad-498a-870b-71a3a0ed445c.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Screenshot (57)](https://user-images.githubusercontent.com/110052834/216419654-d6bd3e64-ffcb-4c92-b256-a41c7389c4fd.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Screenshot (58)](https://user-images.githubusercontent.com/110052834/216419675-679c8150-94b4-4abe-9643-e04ce49cd0c5.png)
 
-## Learn More
+![Screenshot (59)](https://user-images.githubusercontent.com/110052834/216419745-d7320b18-a041-4e16-898a-235a02e1a53d.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<h2>🌐See Live</h2>
 
-### Code Splitting
+[https://paytm-mall-clone-eight.vercel.app/](https://paytm-mall-clone-eight.vercel.app/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<h2>🛠️ Installation Steps:</h2>
 
-### Making a Progressive Web App
+<p>1. Clone the repo</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
+git clone https://github.com/Bipin579/tasteful-pump-9576.git
+```
 
-### Advanced Configuration
+<p>2. Install NPM packages</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
+npm install
+```
 
-### Deployment
+<p>3. View on browser at localhost:3000</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
+npm start
+```
 
-### `npm run build` fails to minify
+  
+  
+<h2>💻 Tech Stack</h2>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Technologies used in the project:
+
+*   React Js
+*   Redux
+*   Chakra Ui
+*   JavaScript
+
+<h2>Special Thanks 😊</h2>
+
+<p>Thanks Masai School for giving us this opportunity to show and deploy our skills to explore ideas and learn new things about project-making </p>
